@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI calc</title>
+</head>
+<body style="background-color:rgb(17, 166, 230); padding-top: 170px;">
+   </div>
+    <div align="center">
+    <h1 align="center">JOHN's</h1>
+    <h2 align="center">Simple Interest Calculator</h2>
+    <p align="center">Use this easy simple Simple Intrest Caluclator</p>
+    <h4>
+        Principle:<input type="number" name="Principle Amount Invest" id="n1">
+        Rate:<input type="number" name="Rate per Year" id="n2">
+        Time:<input type="number" name="Time in Year" id="n3">
+        <button style="background-color:silver"
+        onclick="calfun()">Calculate</button>
+    </h4>
+
+    <p id="Calculate"></p>
+  </div>
+    <script src="calc.js"></script>
+<script>function calfun(){var a=document.getElementById("n1").value;
+var b=document.getElementById("n2").value; c=document.getElementById("n3").value;
+console.log(Number(a)*(Number(b)/100)*Number(c));d=Number(a)*(Number(b)/100)*Number(c);document.getElementById("Calculate").innerHTML="The Result is  " +d}
+</script>
+</body>
+</html>
